@@ -1,0 +1,7 @@
+#archivos latex
+*.log
+*.synctex.gz
+*.toc
+*.aux
+*.idx
+*.pdf

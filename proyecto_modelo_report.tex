@@ -1,0 +1,98 @@
+\documentclass{EFUCVproyect}
+\usepackage{titlesec}
+%\usepackage{pst-barcode}
+%\usepackage{auto-pst-pdf} % uncomment this if used with pdflatex
+
+\usepackage{hyperref}
+\usepackage{qrcode}
+
+\titleformat{\chapter}
+  {\Large\bfseries} % format
+  {}                % label
+  {0pt}             % sep
+  {\huge}           % before-code
+\newcommand{\cb}[1]{
+\medskip 
+\begin{tabular}{p{5.0cm} p{9.0cm}}
+& \\ 
+&
+\begin{tabular}{|p{9.0cm}|}
+\hline
+\\
+#1\\
+\\
+\hline
+\end{tabular}
+\\
+& \\
+\end{tabular}
+\medskip 
+}
+\titulo{{\bfseries\uppercase{\expandafter{ proyecto modelo (título del proyecto)}}}}
+\autor{Nomen{ } Nescio}{m}{nomen.nescio@ucv.ve} %nombre del autor, género m o f, email
+\centro{centro}
+\laboratorio{laboratorio}
+\title{proyecto modelo}
+\author{Nomen~ Nescio}
+\numproy{EF-PGXXX001-2016 }
+
+\anho{Marzo-2015}
+\begin{document}
+%\maketitle
+\pagestyle{empty}
+%\portada %fabrica la portada usar, solo se imprime en versión final
+%
+%\cleardoublepage
+%\primerapagina %fabrica la primera página (es igual a la portada, sin el marco)
+%
+%\cleardoublepage
+
+\begin{tabular}{p{11.0cm} p{3.0cm}}
+\begin{tabular}{p{11.0cm}}
+\tesistitulo \\
+\tesisautor \\
+\tesisautoremail \\
+{\sc universidad central de venezuela} \\
+{\sc facultad de ciencias escuela de física} \\
+{\sc \lab} \\
+{\sc \centrolab} \\
+\numerodelproyecto
+\end{tabular}
+&
+\begin{tabular}{p{3.0cm}}
+
+    \qrcode{\numerodelproyecto \\ \tesisautor \\ \tesisautoremail}
+
+\end{tabular}
+\\
+& \\
+\end{tabular}
+
+\tableofcontents
+\newpage
+\pagestyle{fancy}
+%\thispagestyle{empty}
+\input{resumen2.tex}
+%\chapter{Proyecto}
+\input{introduccion.tex}
+\input{justificacion.tex}
+\input{objetivos.tex}
+\input{impacto.tex}
+\newpage
+\input{area.tex}
+\input{procedimiento.tex}
+\input{resultados_esperados.tex}
+\input{participantes.tex}
+
+%%%%%%%%%%%%%%%%%%%
+%% Aquí viene la bibliografía
+%% Se etiqueta con números y la bibliografía se lista por orden de aparición en el texto
+%% Se puede colocar bibliografía por capítulos. Sin embargo, en este ejemplo se hace al final del documento
+%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{unsrt}
+\bibliography{bibliografia}
+\appendix
+\newpage
+\input{modeloApendice.tex}
+
+\end{document}

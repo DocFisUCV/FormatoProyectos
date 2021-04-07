@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: proyecto_modelo_report.aux
+The style file: unsrt.bst
+Database file #1: bibliografia.bib
+Warning--empty journal in Ade:2014xna
+You've used 5 entries,
+            1791 wiz_defined-function locations,
+            476 strings with 4117 characters,
+and the built_in function-call counts, 913 in all, are:
+= -- 71
+> -- 44
+< -- 0
++ -- 17
+- -- 12
+* -- 45
+:= -- 160
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 47
+empty$ -- 96
+format.name$ -- 12
+if$ -- 201
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 6
+newline$ -- 29
+num.names$ -- 5
+pop$ -- 21
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 15
+stack$ -- 0
+substring$ -- 21
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 6
+width$ -- 6
+write$ -- 55
+(There was 1 warning)

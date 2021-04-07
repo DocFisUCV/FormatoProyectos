@@ -4,4 +4,4 @@
 *.toc
 *.aux
 *.idx
-*.pdf
+#*.pdf
